@@ -45,7 +45,7 @@ void Slot::addRestriction(Restriction* restriction) {
 }
 
 std::ostream& operator<<(std::ostream& os, Slot* s) {
-    os << "[SIZE] " << s->getSize() << " [STARTPOS] " << s->getStartPos().first << ", "
+    os << "[ID] " << s->getId() << " [SIZE] " << s->getSize() << " [STARTPOS] " << s->getStartPos().first << ", "
         << s->getStartPos().second << " [DIRECTION] " << s->getDirection()
         << " [RESTRICTIONS] " << s->getRestrictions();
     return os;

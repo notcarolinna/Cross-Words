@@ -127,11 +127,10 @@ void Grid::loadSlots() {
             }
         }
     }
+}
 
-    for (Slot* slot : _slots) {
-        std::cout << slot << std::endl;
-    }
-    
+std::vector<Slot*> Grid::getSlots() const {
+    return _slots;
 }
 
 void Grid::print() const {

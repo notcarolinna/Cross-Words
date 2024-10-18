@@ -13,6 +13,7 @@ public:
     
     int getRowSize() const;
     int getColSize() const;
+    std::vector<Slot*> getSlots() const;
     void loadFromFile(std::string fileName);
     void verify() const;
     void loadSlots();

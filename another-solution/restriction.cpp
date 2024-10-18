@@ -33,9 +33,8 @@ std::ostream& operator<<(std::ostream& os, Restriction* s) {
 std::ostream& operator << (std::ostream& os, std::vector<Restriction*> v) 
 {
     os << "[";
-    for (typename std::vector<Restriction*>::const_iterator ii = v.begin(); ii != v.end(); ++ii)
-    {
-        os << " " << *ii;
+    for (typename std::vector<Restriction*>::const_iterator ii = v.begin(); ii != v.end(); ++ii) {
+        os << *ii << ", ";
     }
     os << "]";
     return os;
